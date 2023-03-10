@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Loading from './Loading';
+import FetchData from './FetchData';
 
 function App() {
   return (
     <div className="App">
-     <Loading/>
+   <FetchData/>
     </div>
   );
 }
