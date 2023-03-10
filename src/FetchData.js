@@ -4,6 +4,16 @@ import Error from './Error'
 import Loading from './Loading'
 import Card from './Card'
 
+const paginationstyle = {
+    backgroundColor:"green",
+    height:"22px",
+    width:"20px",
+    borderRadius:"50px",
+    margin:"2px",
+    border:"1px solid darkgreen",
+    textAlign:"center"
+ }
+
 function FetchData() {
     let [store,setStore]=useState([])
     let[flag,setFlag]=useState(true)
@@ -59,7 +69,7 @@ function FetchData() {
     <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
     {
       [...Array(Math.floor(store.length/8))].map((ele,ind)=>(
-        <div style={{backgroundColor:"green",height:"22px",width:"20px",borderRadius:"50px",margin:"2px",border:"1px solid darkgreen",textAlign:"center"}} onClick={()=>setPagination(ind)}>{ind+1}</div>
+        <button style={paginationstyle} onClick={()=>setPagination(ind)}>{ind+1}</button>
         ))
       }
     </div>
