@@ -3,6 +3,7 @@ import axios from "axios"
 import Error from './Error'
 import Loading from './Loading'
 import Card from './Card'
+import Header from './Header'
 
 const paginationstyle = {
     backgroundColor:"green",
@@ -50,6 +51,7 @@ function FetchData() {
         :
        error? <Error/>:
     <> 
+    <Header/>
        <div style={{display:"flex",justifyContent:"center",alignItems:"center",flexWrap:"wrap",width:"100%",margin:"15px"}}>
       {
         

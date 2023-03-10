@@ -4,6 +4,7 @@ import "./App.css"
 function Card({date,link,rendered,protect,excerpt,url,author}) {
   return (
     <div>
+    
       <div className="flip-card">
         <div className="flip-card-inner">
           <div className="flip-card-front">
