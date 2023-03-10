@@ -59,7 +59,7 @@ function FetchData() {
     <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
     {
       [...Array(Math.floor(store.length/8))].map((ele,ind)=>(
-        <button onClick={()=>setPagination(ind)}>{ind+1}</button>
+        <div style={{backgroundColor:"green",height:"22px",width:"20px",borderRadius:"50px",margin:"2px",border:"1px solid darkgreen",textAlign:"center"}} onClick={()=>setPagination(ind)}>{ind+1}</div>
         ))
       }
     </div>
