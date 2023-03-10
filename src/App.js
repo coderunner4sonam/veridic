@@ -1,13 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-import FetchData from './FetchData';
-import Header from './Header';
+import logo from "./logo.svg";
+import "./App.css";
+import FetchData from "./FetchData";
 
 function App() {
   return (
     <div className="App">
-      
-    <FetchData/>
+      <FetchData />
     </div>
   );
 }
